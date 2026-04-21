@@ -1,6 +1,6 @@
 -- WhyHelper.lua
 script_name("WhyHelper")
-script_author("whyhotrt")
+script_author("WhyHtr")
 script_version("1.0")
 
 require("lib.moonloader")
@@ -35,7 +35,7 @@ function main()
 
     sampAddChatMessage(u8:decode("{00FF00}[WhyHelper]{FFFFFF} Загрузка хелпера прошла успешно, готов к работе!"), -1)
     sampAddChatMessage(u8:decode("{00FF00}[WhyHelper]{FFFFFF} Для открытие скрипта: /wh | Нажать по клавише F9"), -1)
-    sampAddChatMessage(u8:decode("{00FF00}[WhyHelper]{FFFFFF} Версия: 1.0 | Автор: whyhotrt | TG: t.me/why_hotrt"), -1)
+    sampAddChatMessage(u8:decode("{00FF00}[WhyHelper]{FFFFFF} Версия: 1.0 | Автор: WhyHtr | TG: @Why_Htr"), -1)
 
     sampRegisterChatCommand("wh", function()
         window.v = not window.v
@@ -182,7 +182,7 @@ function imgui.OnDrawFrame()
 
         imgui.TextWrapped("Обновления и тех.поддержка скрипта в нашем Telegram канале:")
         if imgui.Button("Telegram", imgui.ImVec2(100, 20)) then
-            os.execute('start https://t.me/why_hotrt')
+            os.execute('start https://t.me/Why_Htr')
         end
 
         imgui.Separator()
